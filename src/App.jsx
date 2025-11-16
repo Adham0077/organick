@@ -16,6 +16,7 @@ function App() {
           <Route path="product/:id" element={<ProductDetail />} />
           <Route path="about" element={<About />} />
           <Route path="shop" element={<Shop />} />
+          <Route path="*" element={<h1 className='container text-8xl'>Not Found</h1>} />
         </Route>
       </Routes>
     </>

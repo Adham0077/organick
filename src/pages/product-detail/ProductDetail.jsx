@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { products, organics } from '../../data/product';
+import { products, organics, fresh } from '../../data/product';
 import baner from "../../assets/product-detail-svg/Ban.png"
 import { Button } from '../../components/Button';
 import { MinBannerAll } from '../../components/MinBannerAll';
@@ -12,7 +12,10 @@ export const ProductDetail = () => {
     if (!selectedProduct) {
         selectedProduct = organics.find((b) => b.id === Number(id));
         if (!selectedProduct) {
-            <h1>Not Found</h1>
+            selectedProduct = fresh.find((b) => b.id === Number(id));
+            if (!selectedProduct) {
+                return <h1 className='container text-8xl'>Not Found</h1>
+            }
         }
     }
 
