@@ -14,7 +14,7 @@ export const ProductCard = ({ item }) => {
             <div className="flex justify-between">
                 <div className="flex gap-2 mt-1">
                     <p className="line-through text-gray-400">${item.oldPrice}</p>
-                    <p className="text-lg font-bold text-green-600">${item.price}</p>
+                    <p className="text-lg font-bold text-MainGreen">${item.price}</p>
                 </div>
                 <p className="text-yellow-500">{'★'.repeat(item.rating)}</p>
             </div>

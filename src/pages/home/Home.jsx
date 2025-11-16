@@ -4,6 +4,10 @@ import { MinHero } from './MinHero'
 import { Farmer } from './Farmer'
 import { Product } from './Product'
 import { Customer } from './Customer'
+import { Organic } from './Organic'
+import { Store } from './Store'
+import { Juice } from './Juice'
+import { Discover } from './Discover'
 
 export const Home = () => {
   return (
@@ -13,6 +17,10 @@ export const Home = () => {
         <Farmer />
         <Product />
         <Customer />
+        <Organic />
+        <Store />
+        <Juice />
+        <Discover />
     </div>
   )
 }

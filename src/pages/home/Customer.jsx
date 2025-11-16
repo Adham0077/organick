@@ -20,8 +20,8 @@ export const Customer = () => {
                     </p>
                     <h4 className='text-[25px] font-semibold'>Sara Taylor</h4>
                     <p className='text-[15px] font-normal text-MainGrey my-2'>Consumer</p>
-                    <span className='border border-gray-300 block w-full my-[102px]'></span>
                 </div>
+                <span className='border border-gray-300 block w-full my-[102px]'></span>
                 <ul className='flex justify-between'>
                     <li className='w-[211px] h-[211px] border-2 border-MainGreen bg-gray-200 text-center flex flex-col justify-center items-center rounded-full'>
                         <h4 className="text-[50px] font-bold">100%</h4>
